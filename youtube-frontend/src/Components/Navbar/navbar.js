@@ -16,14 +16,14 @@ const Navbar = ({ setSideNavbarFunc, sideNavbar }) => {
   const handleClickModal = () => {
     setNavbarModal((prev) => !prev);
   };
-  // const sideNavbarFunc = () => {
-  //   setSideNavbarFunc(!sideNavbar);
-  // };
+  const sideNavbarFunc = () => {
+    setSideNavbarFunc(!sideNavbar);
+  };
   return (
     <div className="navbar">
       {/* Navbar Left Section */}
       <div className="navbar-left">
-        <div className="navbarHamberger">
+        <div className="navbarHamberger" onClick={sideNavbarFunc}>
           <MenuIcon sx={{ color: "white" }} />
         </div>
         <div className="navbar_youtubeImg">
